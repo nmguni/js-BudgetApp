@@ -39,3 +39,37 @@
 @import "components/pulse";
 @import "components/datepicker";
 @import "components/timepicker";
+
+.budget-feedback,
+.expense-feedback{
+    display: none;
+}
+.showItem{
+    display: block;
+}
+
+.showGreen{
+    color: green;
+}
+
+.showBlack{
+    color: black;
+}
+
+.showRed{
+    color: red;
+}
+
+
+#budget{
+    color: green;
+}
+
+#expense {
+    color: red;
+}
+
+.expense-amount,
+.expense-title {
+  color: red;
+}
