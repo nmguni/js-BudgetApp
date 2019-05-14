@@ -15,30 +15,17 @@
 @import "components/badges";
 @import "components/icons-material-design";
 @import "components/grid";
-@import "components/navbar";
 @import "components/typography";
 @import "components/transitions";
-@import "components/cards";
-@import "components/toast";
-@import "components/tabs";
 @import "components/tooltip";
 @import "components/buttons";
-@import "components/dropdown";
 @import "components/waves";
 @import "components/modal";
 @import "components/collapsible";
 @import "components/chips";
 @import "components/materialbox";
 @import "components/forms/forms";
-@import "components/table_of_contents";
-@import "components/sidenav";
-@import "components/preloader";
-@import "components/slider";
-@import "components/carousel";
-@import "components/tapTarget";
-@import "components/pulse";
-@import "components/datepicker";
-@import "components/timepicker";
+
 
 
 // GLOBAL 
@@ -58,13 +45,12 @@ body{
   }
 
 
-
 // header 
 header{
     text-transform: uppercase;
     letter-spacing: 5px;
     h1{
-        font-size: 5vw;
+        font-size: 3vw;
         font-weight: 100;
         color: rgba(0,0,0,0.7);
         @include custom-text-shadow();
@@ -78,8 +64,11 @@ header{
     border-radius: 25px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    background-color: rgba(228, 0, 0, 0.445);
-    color: red;
+    @extend .yellow, .lighten-2;
+    opacity: .6;
+    border: rgba(255, 0, 0, 0.144) 3px solid;
+    // background-color: rgba(228, 0, 0, 0.164);
+    color: rgba(255, 0, 0, 0.541);
     font-weight: 600;
     @include custom-shadow();
 }
@@ -128,15 +117,12 @@ form{
 }
 }
 .expense-list{
-    
     h5{
         text-transform: capitalize;
-
     }
 }
 
 .expense-item{
-    
     h6{
         text-transform: uppercase;
         margin: 5px;
@@ -148,7 +134,6 @@ form{
         color: #000;
         padding-left: 5px;
     }
-    
 }
 
 .bg-color{
@@ -157,8 +142,6 @@ form{
     padding: 10px;
     margin-bottom: 10px;
 }
-
-
 
 
 .budget-feedback,
