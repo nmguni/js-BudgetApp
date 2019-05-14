@@ -25,10 +25,10 @@
       <h1>budget App</h1>
     </header>
     <!-- budget feed back -->
-    <div class="budget-feedback alert alert-danger text-capitalize">budget feedback</div>
+    <div class="budget-feedback empty-feedback">budget feedback</div>
     <!-- budget form -->
     <div class="row">
-      <form id="budget-form" class="col s12">
+      <form id="budget-form" class="col s12 budget-form">
         <div class="row">
           <div class="input-field col s12">
             <input id="budget-input" type="number" class="validate">
@@ -37,7 +37,7 @@
         </div>
         <!-- submit button -->
         <button id="budget-submit" class="btn waves-effect waves-light  budget-submit" type="submit" name="action">Calculate
-          <i class="material-icons right">send</i>
+          <i class="material-icons right">attach_money</i>
         </button>
       </form>
     </div>
@@ -47,22 +47,22 @@
     <section class="expense">
       <div class="row">
         <!-- expense feed back -->
-        <div class="expense-feedback alert alert-danger text-capitalize">expense feedback</div>
+        <div class="expense-feedback empty-feedback">expense feedback</div>
         <!-- expense forem -->
         <form id="expense-form" class="expense-form col s12">
           <div class="row">
             <div class="input-field col s12">
               <input id="expense-input" type="text" class="validate form-control expense-input">
-              <label for="email">Please Enter Your Expense</label>
+              <label>Please Enter Your Expense</label>
             </div>
             <div class="input-field col s12">
               <input id="amount-input" type="number" class="validate form-control expense-input">
-              <label for="email">Please Enter Expense Amount</label>
+              <label>Please Enter Expense Amount</label>
             </div>
           </div>
           <!-- submit button -->
           <button id="expense-submit" class="btn waves-effect waves-light  expense-submit" type="submit" name="action">Add Expense
-            <i class="material-icons right">send</i>
+            <i class="material-icons right">attach_money</i>
           </button>
       </div>
       </form>
@@ -71,38 +71,42 @@
   </section>
 
   <!-- app info -->
-  <div class="container center">
+  <div class="container center bottom">
     <secton class="app-info">
       <div class="row">
         <div class="col s12 m4">
-          <h6 class="text-uppercase info-title">budget</h6>
-          <i class="fas fa-money-bill-alt"></i>
-          <h4 class="text-uppercase mt-2 budget" id="budget">
+          <h6>budget</h6>
+          <i class="fas fa-money-bill-alt fa-2x"></i>
+          <h4 class="budget" id="budget">
             <span>$ </span>
             <span id="budget-amount">0</span>
           </h4>
-
         </div>
+
         <div class="col s12 m4">
-          <h6 class="text-uppercase info-title">expenses</h6>
-          <i class="fas fa-credit-card"></i>
-          <h4 class="text-uppercase mt-2 expense" id="expense">
+          <h6>expenses
+
+          </h6>
+          <i class="fas fa-credit-card fa-2x"></i>
+
+          <h4 class="expense" id="expense">
             <span>$ </span>
             <span id="expense-amount">0</span>
           </h4>
 
         </div>
         <div class="col s12 m4">
-          <h6 class="text-uppercase info-title">balance</h6>
-          <i class="fas fa-balance-scale"></i>
-          <h4 class="text-uppercase mt-2 balance" id="balance">
+          <h6>balance</h6>
+          <i class="fas fa-balance-scale fa-2x"></i>
+          <h4 class="balance" id="balance">
             <span>$ </span>
             <span id="balance-amount">0</span>
           </h4>
 
         </div>
-      </div>
     </secton>
+    </div>
+
 
 
     <!-- expense list -->
@@ -112,6 +116,7 @@
         <div class="row">
           <div class="col m6">
             <h5 class="list-item">expense title</h5>
+
           </div>
           <div class="col m6">
             <h5 class="list-item">expense value</h5>
@@ -119,44 +124,21 @@
         </div>
         <h5 class="list-item"></h5>
       </div>
-      <!-- single expense -->
-
-      <!-- <div class="expense">
-         <div class="expense-item d-flex justify-content-between align-items-baseline">
- 
-          <h6 class="expense-title mb-0 text-uppercase list-item">- title</h6>
-          <h5 class="expense-amount mb-0 list-item">amount</h5>
- 
-          <div class="expense-icons list-item">
- 
-           <a href="#" class="edit-icon mx-2" data-id="${expense.id}">
-            <i class="fas fa-edit"></i>
-           </a>
-           <a href="#" class="delete-icon" data-id="${expense.id}">
-            <i class="fas fa-trash"></i>
-           </a>
-          </div>
-         </div>
- 
-        </div> -->
-
-      <!-- end of single expense -->
-
-
-
-
-
-      <!-- bottom container -->
     </div>
+  </div>
+  </div>
+
+  <!-- bottom container -->
+  </div>
 
 
 
-    <!-- bootom page -->
-    <script src="js/app.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      M.AutoInit();
-    </script>
+  <!-- bootom page -->
+  <script src="js/app.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    M.AutoInit();
+  </script>
 </body>
 
 </html>

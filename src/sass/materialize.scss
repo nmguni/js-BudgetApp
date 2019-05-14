@@ -40,6 +40,127 @@
 @import "components/datepicker";
 @import "components/timepicker";
 
+
+// GLOBAL 
+body{
+    font-family: 'Roboto', sans-serif;
+    @extend .grey, .lighten-2;
+
+}
+// Mixins 
+@mixin custom-text-shadow {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.62);
+  }
+  @mixin custom-shadow {
+    -webkit-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.4);
+  box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.4);
+  }
+
+
+
+// header 
+header{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    h1{
+        font-size: 5vw;
+        font-weight: 100;
+        color: rgba(0,0,0,0.7);
+        @include custom-text-shadow();
+    }
+}
+// budget feed back 
+.empty-feedback{
+    padding: .8rem;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background-color: rgba(228, 0, 0, 0.445);
+    color: red;
+    font-weight: 600;
+    @include custom-shadow();
+}
+
+// enter budget form & button 
+
+.budget-form{
+    @extend .teal, .lighten-4;
+
+       button{
+           border-radius: 25px;
+           @extend .purple, .lighten-4;
+           color: #000;
+       }
+    }
+// enter expense form & button
+.expense-form{
+    @extend .purple, .lighten-4;
+    button{
+        border-radius: 25px;
+        @extend .teal, .lighten-4;
+        color: #000;
+    }
+}
+form{
+    padding: 1rem!important;
+    border-radius: 25px;
+    color: #000;
+    @include custom-shadow();
+    label{
+        color: #000!important;
+    }
+}
+
+
+// budget - expense - balance 
+
+.bottom{
+    @extend .red, .lighten-3;
+    border-radius: 25px;
+    @include custom-shadow();
+    h6{
+        font-size: 1.8rem;
+        text-transform: capitalize;
+  
+}
+}
+.expense-list{
+    
+    h5{
+        text-transform: capitalize;
+
+    }
+}
+
+.expense-item{
+    
+    h6{
+        text-transform: uppercase;
+        margin: 5px;
+    }
+}
+.expense-amount{
+    margin: 5px;
+    i{
+        color: #000;
+        padding-left: 5px;
+    }
+    
+}
+
+.bg-color{
+    @extend .red, .lighten-2;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
 .budget-feedback,
 .expense-feedback{
     display: none;
