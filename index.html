@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous">
+  <!-- The official version of materialize.css for testing purposes -->
+  <!-- <link type="text/css" rel="stylesheet" href="official/materialize.css" media="screen,projection" /> -->
+  <!-- Your customized version of materialize.css -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>budget app</title>
+</head>
+
+<body>
+  <div class="center container">
+    <header>
+      <h1>budget App</h1>
+    </header>
+    <!-- budget feed back -->
+    <div class="budget-feedback empty-feedback">budget feedback</div>
+    <!-- budget form -->
+    <div class="row">
+      <form id="budget-form" class="col s12 budget-form">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="budget-input" type="number" class="validate">
+            <label for="email">Enter Your Budget</label>
+          </div>
+        </div>
+        <!-- submit button -->
+        <button id="budget-submit" class="btn waves-effect waves-light  budget-submit" type="submit" name="action">Calculate
+          <i class="material-icons right">attach_money</i>
+        </button>
+      </form>
+    </div>
+
+
+    <!-- expense feed back -->
+    <section class="expense">
+      <div class="row">
+        <!-- expense feed back -->
+        <div class="expense-feedback empty-feedback">expense feedback</div>
+        <!-- expense forem -->
+        <form id="expense-form" class="expense-form col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="expense-input" type="text" class="validate form-control expense-input">
+              <label>Please Enter Your Expense</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="amount-input" type="number" class="validate form-control expense-input">
+              <label>Please Enter Expense Amount</label>
+            </div>
+          </div>
+          <!-- submit button -->
+          <button id="expense-submit" class="btn waves-effect waves-light  expense-submit" type="submit" name="action">Add Expense
+            <i class="material-icons right">attach_money</i>
+          </button>
+      </div>
+      </form>
+
+  </div>
+  </section>
+
+  <!-- app info -->
+  <div class="container center bottom">
+    <secton class="app-info">
+      <div class="row">
+        <div class="col s12 m4">
+          <h6>budget</h6>
+          <i class="fas fa-money-bill-alt fa-2x"></i>
+          <h4 class="budget" id="budget">
+            <span>$ </span>
+            <span id="budget-amount">0</span>
+          </h4>
+        </div>
+
+        <div class="col s12 m4">
+          <h6>expenses
+
+          </h6>
+          <i class="fas fa-credit-card fa-2x"></i>
+
+          <h4 class="expense" id="expense">
+            <span>$ </span>
+            <span id="expense-amount">0</span>
+          </h4>
+
+        </div>
+        <div class="col s12 m4">
+          <h6>balance</h6>
+          <i class="fas fa-balance-scale fa-2x"></i>
+          <h4 class="balance" id="balance">
+            <span>$ </span>
+            <span id="balance-amount">0</span>
+          </h4>
+
+        </div>
+    </secton>
+    </div>
+
+
+
+    <!-- expense list -->
+    <div class="expense-list" id="expense-list">
+
+      <div class="expense-list__info ">
+        <div class="row">
+          <div class="col m6">
+            <h5 class="list-item">expense title</h5>
+
+          </div>
+          <div class="col m6">
+            <h5 class="list-item">expense value</h5>
+          </div>
+        </div>
+        <h5 class="list-item"></h5>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- bottom container -->
+  </div>
+
+
+
+  <!-- bootom page -->
+  <script src="js/app.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    M.AutoInit();
+  </script>
+</body>
+
+</html>
