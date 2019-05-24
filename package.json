@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "build": "gulp",
     "css": "gulp scss",
     "js": "gulp js",
@@ -16,6 +17,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/nmguni/js-BudgetApp",
   "bugs": {
     "url": "https://github.com/nmguni/js-BudgetApp/issues"
   },
@@ -36,5 +38,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
