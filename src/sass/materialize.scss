@@ -32,7 +32,9 @@
 body{
     font-family: 'Roboto', sans-serif;
     @extend .grey, .lighten-2;
-
+}
+*{
+    border-radius: 5px;
 }
 // Mixins 
 @mixin custom-text-shadow {
@@ -61,7 +63,7 @@ header{
     padding: .8rem;
     margin-bottom: 10px;
     font-size: 1.5rem;
-    border-radius: 25px;
+    // border-radius: 25px;
     letter-spacing: 5px;
     text-transform: uppercase;
     @extend .yellow, .lighten-2;
@@ -76,26 +78,25 @@ header{
 // enter budget form & button 
 
 .budget-form{
-    @extend .teal, .lighten-4;
-
+    @extend .blue-grey, .lighten-4;
        button{
-           border-radius: 25px;
-           @extend .purple, .lighten-4;
-           color: #000;
+           @extend .blue-grey, .darken-3;
+           color: #fff;
        }
     }
 // enter expense form & button
 .expense-form{
-    @extend .purple, .lighten-4;
+    @extend .blue-grey, .lighten-4;
     button{
-        border-radius: 25px;
-        @extend .teal, .lighten-4;
-        color: #000;
+        // border-radius: 25px;
+        @extend .blue-grey, .darken-3;
+        color: #fff;
     }
+  
 }
 form{
     padding: 1rem!important;
-    border-radius: 25px;
+    // border-radius: 25px;
     color: #000;
     @include custom-shadow();
     label{
@@ -107,8 +108,7 @@ form{
 // budget - expense - balance 
 
 .bottom{
-    @extend .red, .lighten-3;
-    border-radius: 25px;
+    @extend .green, .lighten-4;
     @include custom-shadow();
     h6{
         font-size: 1.8rem;
@@ -138,7 +138,7 @@ form{
 
 .bg-color{
     @extend .red, .lighten-2;
-    border-radius: 25px;
+    // border-radius: 25px;
     padding: 10px;
     margin-bottom: 10px;
 }
