@@ -36,6 +36,10 @@ body{
 *{
     border-radius: 5px;
 }
+*button{
+    @extend .blue-grey, .darken-2;
+    color: #fff;
+}
 // Mixins 
 @mixin custom-text-shadow {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.62);
@@ -78,30 +82,18 @@ header{
 // enter budget form & button 
 
 .budget-form{
-    @extend .blue-grey, .lighten-4;
-       button{
-           @extend .blue-grey, .darken-3;
-           color: #fff;
-       }
+    @extend .blue-grey, .lighten-3;
+    background-color:#cfd8dc ;
     }
 // enter expense form & button
 .expense-form{
-    @extend .blue-grey, .lighten-4;
-    button{
-        // border-radius: 25px;
-        @extend .blue-grey, .darken-3;
-        color: #fff;
-    }
-  
+    @extend .blue-grey, .lighten-3;
 }
 form{
     padding: 1rem!important;
-    // border-radius: 25px;
     color: #000;
     @include custom-shadow();
-    label{
-        color: #000!important;
-    }
+
 }
 
 
@@ -138,7 +130,6 @@ form{
 
 .bg-color{
     @extend .red, .lighten-2;
-    // border-radius: 25px;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -179,3 +170,37 @@ form{
 }
 
 
+//dark mode btns 
+
+/// back ground
+
+.bg-dark{
+    color: #000;
+}
+
+// dark mode
+.dark_body{
+    background-color: rgba(2, 2, 2, 0.87)!important;
+
+}
+
+.card_color{
+background-color: #1a2124!important;
+}
+
+.label_white{
+    color: #fff!important;
+}
+
+form{
+    .labelColor{
+        color: #000;
+    }
+}
+.bottom_color{
+    background-color: #1a2124!important;
+}
+
+.buttonColor{
+    background-color: rgb(32, 32, 32)!important;
+}

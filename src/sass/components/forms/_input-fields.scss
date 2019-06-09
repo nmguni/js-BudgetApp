@@ -176,7 +176,7 @@ textarea.materialize-textarea {
   margin-bottom: 1rem;
 
   & > label {
-    color: red;
+    color: $input-border-color;
     position: absolute;
     top: 0;
     left: 0;
