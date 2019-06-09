@@ -12,11 +12,16 @@ class UI {
         this.expenseInput = document.getElementById("expense-input");
         this.amountInput = document.getElementById("amount-input");
         this.expenseList = document.getElementById("expense-list");
+        this.darkMode = document.getElementById("darkMode");
         this.itemList = [];
         this.itemID = 0;
         // color changer
 
     }
+
+
+
+
 
     // submit budget method
     submitBudgetForm() {
@@ -37,6 +42,7 @@ class UI {
         }
 
     }
+
 
     showBalance() {
         //calc total
@@ -154,6 +160,37 @@ class UI {
     }
 }
 
+//swtch
+function darkMode() {
+    let bg_body = document.getElementById('body');
+    let card_color = document.getElementById('expense-form');
+    let card_color2 = document.getElementById('budget-form');
+    let bottom = document.getElementById('bottom');
+    let button = document.getElementById('budget-submit');
+    let button2 = document.getElementById('expense-submit');
+    document.getElementById("darkMode").addEventListener('click', function (event) {
+
+        if (this.checked == true) {
+            card_color.classList.add('card_color');
+            bg_body.classList.add('dark_body');
+            card_color2.classList.add('card_color');
+            bottom.classList.add('bottom_color')
+            button.classList.add('buttonColor')
+            button2.classList.add('buttonColor')
+        } else {
+            bg_body.classList.remove('dark_body');
+            card_color.classList.remove('card_color');
+            card_color2.classList.remove('card_color');
+            bottom.classList.remove('bottom_color');
+            button.classList.remove('buttonColor')
+            button2.classList.remove('buttonColor')
+
+        }
+
+    })
+}
+
+
 // run this function as DOm content loads
 function eventListeners() {
     // get forms 
@@ -188,8 +225,17 @@ function eventListeners() {
         }
 
     })
+
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     eventListeners();
 })
+
+
+
+
+
+
+

@@ -19,20 +19,36 @@
   <title>budget app</title>
 </head>
 
-<body>
+<body id="body">
+
   <div class="center container">
+    <!-- Switch -->
+    <label>
+      <input id="darkMode" type="checkbox" onclick="darkMode()">
+      <span>dark mode</span>
+    </label>
+
+    <div id="switch" class="switch">
+      <label>
+        Off
+        <input id="darkMode" type="checkbox">
+        <span class="lever"></span>
+        On
+      </label>
+    </div>
+
     <header>
-      <h1>budget App</h1>
+      <h1 id="head_color">budget App</h1>
     </header>
     <!-- budget feed back -->
-    <div class="budget-feedback empty-feedback">budget feedback</div>
+    <div id="budget-feedback " class="budget-feedback empty-feedback">budget feedback</div>
     <!-- budget form -->
     <div class="row">
       <form id="budget-form" class="col s12 budget-form">
         <div class="row">
           <div class="input-field col s12">
             <input id="budget-input" type="number" class="validate">
-            <label for="email">Enter Your Budget</label>
+            <label class="label labelColor" for="email">Enter Your Budget</label>
           </div>
         </div>
         <!-- submit button -->
@@ -49,15 +65,15 @@
         <!-- expense feed back -->
         <div class="expense-feedback empty-feedback">expense feedback</div>
         <!-- expense forem -->
-        <form id="expense-form" class="expense-form col s12">
+        <form id="expense-form" class="expense-form col s12 ">
           <div class="row">
             <div class="input-field col s12">
               <input id="expense-input" type="text" class="validate form-control expense-input">
-              <label>Please Enter Your Expense</label>
+              <label id="label_color" class="labelColor">Please Enter Your Expense</label>
             </div>
             <div class="input-field col s12">
               <input id="amount-input" type="number" class="validate form-control expense-input">
-              <label>Please Enter Expense Amount</label>
+              <label class="labelColor">Please Enter Expense Amount</label>
             </div>
           </div>
           <!-- submit button -->
@@ -71,7 +87,7 @@
   </section>
 
   <!-- app info -->
-  <div class="container center bottom">
+  <div id="bottom" class="container center bottom">
     <secton class="app-info">
       <div class="row">
         <div class="col s12 m4">
